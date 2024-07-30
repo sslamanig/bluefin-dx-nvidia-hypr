@@ -40,7 +40,8 @@ rpm-ostree install hyprland \
     brightnessctl \
     playerctl \
     fira-code-fonts \
-    polkit-gnome
+    polkit-gnome \
+    gnome-themes-extra
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
