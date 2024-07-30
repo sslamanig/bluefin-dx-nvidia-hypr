@@ -20,7 +20,6 @@ for i in solopasha/hyprland; do
     "https://copr.fedorainfracloud.org/coprs/${MAINTAINER}/${REPOSITORY}/repo/fedora-${RELEASE}/${MAINTAINER}-${REPOSITORY}-fedora-${RELEASE}.repo"
 done
 
-# this installs a package from fedora repos
 rpm-ostree install hyprland \
     xdg-desktop-portal-hyprland \
     hyprpaper \
@@ -39,7 +38,6 @@ rpm-ostree install hyprland \
     blueman \
     cliphist \
     brightnessctl \
-    wpctl \
     playerctl \
     fira-code-fonts
 
