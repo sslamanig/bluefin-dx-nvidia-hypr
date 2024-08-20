@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Add COPR repositories (credits go to https://github.com/cjuniorfox/hyprland-atomic/)
-for i in solopasha/hyprland; do
+for i in solopasha/hyprland erikreider/SwayNotificationCenter sunwire/envycontrol; do
     MAINTAINER="${i%%/*}"
     REPOSITORY="${i##*/}"
     curl --output-dir "/etc/yum.repos.d/" --remote-name \
@@ -41,7 +41,9 @@ rpm-ostree install hyprland \
     playerctl \
     fira-code-fonts \
     polkit-gnome \
-    gnome-themes-extra
+    gnome-themes-extra \
+    SwayNotificationCenter \
+    python-envycontrol
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
