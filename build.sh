@@ -44,7 +44,8 @@ rpm-ostree install hyprland \
     gnome-themes-extra \
     SwayNotificationCenter \
     python-envycontrol \
-    scrcpy
+    scrcpy \
+    xdg-desktop-portal-wlr
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
